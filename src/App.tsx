@@ -1,7 +1,8 @@
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+
+// import { ToastContainer, toast } from 'react-toastify';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
 
 
 const App = () => {
@@ -9,8 +10,9 @@ const App = () => {
   return (
     <div>
       <Navbar/>
+      <HeroSection/>
       <Footer/>
-        <ToastContainer />
+        {/* <ToastContainer /> */}
     </div>
   );
 };
