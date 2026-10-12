@@ -1,23 +1,24 @@
+import logo from '../assets/logo-text.png'
 
 const Navbar = () => {
     return (
-        <nav className="h-7 bg-white">
-            <div className="container mx-auto flex justify-between items-center">
-         <div className="bg-amber-400">
-            <img src="./assets/logo-text.png" alt="" />
+        <nav className="bg-white">
+            <div className="container mx-auto h-[72.5px] flex justify-between items-center">
+         <div className='flex items-center'>
+            <img className='w-33 h-auto' src = {logo} alt="" />
         </div> 
          <div className="">
-            <ul className="flex gap-2.5">
-                <li>Home</li>
-                <li>Technologies</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Conatct</li>
+            <ul className="flex justify-center items-center gap-[28.88px] text-small font-sans">
+                <li className="text-magenta"><a href="">Home</a></li>
+                <li><a href="">Technologies</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Conatct</a></li>
             </ul>
         </div> 
-         <div>
-            <button>Sign In</button>
-            <button>Sign Up</button>
+         <div className='flex gap-5'>
+            <button className="text-small">Sign In</button>
+            <button className='flex items-center text-background bg-magenta h-5 w-auto p-5 rounded-4xl'>Sign Up</button>
         </div> 
         </div>
         </nav>

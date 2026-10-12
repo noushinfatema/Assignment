@@ -1,1 +1,23 @@
 @import "tailwindcss";
+@theme{
+  /* font theme */
+  --font-sans : 'Plus Jakarta Sans' ;
+  --font-inter : 'Inter';
+
+  --color-small : #475569FF;
+  --color-magenta :  #db2777FF;
+  --color-midnight-navy : #0A0F1D ;
+  --color-background : #FFFFFF ;
+
+}
+
+@layer base{
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+  background: var(--color-background);
+  font-family: var(--font-sans);
+}
+}
+
