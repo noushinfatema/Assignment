@@ -5,12 +5,13 @@
   --font-inter : 'Inter',sans-serif ;
 
   --color-small : #475569FF;
-  --color-magenta :  #db2777FF;
+  --color-magenta :  #db2777FF; 
   --color-midnight-navy : #0A0F1D ;
   --color-background : #FFFFFF ;
   --color-heroSection : #0f172aFF;
   --color-herobtnborder : #E5E7EB ;
-  --color-herobtnfont : #374151
+  --color-herobtnfont : #374151 ;
+  --color-subheaading : #64748B ;
 
 }
 

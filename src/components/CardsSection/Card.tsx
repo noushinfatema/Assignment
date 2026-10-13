@@ -19,7 +19,7 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
       }`}
     >
       <div>
-        {/* Top bar: Icon & Badge */}
+       
         <div className="flex items-center justify-between mb-4">
           <div className="w-10 h-10 flex items-center justify-center">
             <img src={card.icon} alt={card.name} className="max-w-full max-h-full object-contain" />
@@ -31,7 +31,7 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
           )}
         </div>
 
-        {/* Title & Description */}
+        
         <h3 className="text-lg font-bold text-slate-900 mb-2">{card.name}</h3>
         <p className="text-xs text-slate-500 leading-relaxed mb-6 line-clamp-3">
           {card.description}
@@ -39,7 +39,7 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
       </div>
 
       <div>
-        {/* Category, Difficulty & Rating */}
+        
         <div className="flex items-center justify-between text-xs text-slate-500 mb-4 pt-2 border-t border-slate-100">
           <div className="flex items-center gap-2">
             <span className="bg-slate-100 px-2 py-0.5 rounded text-slate-600 font-medium">{card.category}</span>
