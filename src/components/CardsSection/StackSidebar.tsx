@@ -9,7 +9,7 @@ type StackSidebarProps = {
 
 const StackSidebar = ({ saved, onRemove, onRemoveAll }: StackSidebarProps) => {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm h-fit sticky top-6">
+    <div className="bg-background rounded-2xl p-6 border border-slate-200 shadow-sm h-fit sticky top-6">
       <div className="mb-4">
         <h2 className="text-xl font-bold text-slate-900">Your Stack</h2>
         <p className="text-xs text-slate-500 mt-0.5">
@@ -18,7 +18,7 @@ const StackSidebar = ({ saved, onRemove, onRemoveAll }: StackSidebarProps) => {
       </div>
 
       {saved.length === 0 ? (
-        <div className="border-2 border-dashed border-slate-200 rounded-xl p-8 text-center text-xs text-slate-400 my-4">
+        <div className="font-sans border-2 border-dashed border-slate-200 rounded-xl p-8 text-center text-xs text-slate-400 my-4">
           Your stack is empty.
         </div>
       ) : (

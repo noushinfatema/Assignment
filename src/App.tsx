@@ -26,9 +26,14 @@ const App = () => {
   };
 
   const handleRemoveCard = (id: string) => {
-    setSavedCards((prev) => prev.filter((item) => item.id !== id));
-  };
+  const removedCard = savedCards.find((item) => item.id === id);
 
+  setSavedCards((prev) => prev.filter((item) => item.id !== id));
+
+  if (removedCard) {
+    toast.info(`${removedCard.name} removed from stack!`);
+  }
+};
   const handleRemoveAll = () => {
     setSavedCards([]);
     toast.info("All technologies removed from stack");
@@ -41,7 +46,7 @@ const App = () => {
       <main className="container mx-auto px-4 my-10">
         <div className="mb-8">
           <h1 className="font-inter text-4xl font-extrabold">
-            Explore the <span className="bg-gradient-to-r from-[rgba(255,87,34,1)] via-[rgba(216,27,126,1)] to-[rgba(124,58,237,1)] bg-clip-text text-transparent">Technologies</span>
+            Explore the <span className="bg-gradient-theme bg-clip-text text-transparent">Technologies</span>
           </h1>
           <p className="font-sans text-[16px] text-subheaading mt-2">Pick one technology per category to build your ideal stack.</p>
         </div>
