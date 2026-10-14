@@ -32,8 +32,8 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
         </div>
 
         
-        <h3 className="text-lg font-bold text-slate-900 mb-2">{card.name}</h3>
-        <p className="text-xs text-slate-500 leading-relaxed mb-6 line-clamp-3">
+        <h3 className="font-sans text-lg font-bold text-slate-900 mb-2">{card.name}</h3>
+        <p className="font-sans text-xs text-slate-500 leading-relaxed mb-6 line-clamp-3">
           {card.description}
         </p>
       </div>
@@ -43,7 +43,7 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
         <div className="flex items-center justify-between text-xs text-slate-500 mb-4 pt-2 border-t border-slate-100">
           <div className="flex items-center gap-2">
             <span className="bg-slate-100 px-2 py-0.5 rounded text-slate-600 font-medium">{card.category}</span>
-            <span>{card.difficulty}</span>
+            <span className="font-sans">{card.difficulty}</span>
           </div>
           <div className="flex items-center gap-1 font-semibold text-slate-700">
             <FaStar className="text-amber-400 text-xs" />
@@ -54,9 +54,9 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
         <button
           onClick={() => onSave(card)}
           disabled={isAdded}
-          className={`w-full py-2.5 px-4 rounded-xl font-medium text-sm transition-all duration-200 ${
+          className={`w-full py-2.5 px-4 rounded-xl font-medium font-sans text-sm transition-all duration-200 ${
             isAdded
-              ? "bg-slate-100 text-magenta cursor-not-allowed font-semibold border border-[var(--color-magenta,#db2777)]/20"
+              ? "bg-slate-100 text-magenta cursor-not-allowed font-semibold border border-card-border/5"
               : "bg-slate-900 hover:bg-slate-800 text-white shadow-sm"
           }`}
         >

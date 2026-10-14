@@ -4,14 +4,21 @@
   --font-sans : 'Plus Jakarta Sans',sans-serif ;
   --font-inter : 'Inter',sans-serif ;
 
+  /* color themes */
   --color-small : #475569FF;
   --color-magenta :  #db2777FF; 
+  --color-card-border : #DB2777 ;
   --color-midnight-navy : #0A0F1D ;
   --color-background : #FFFFFF ;
   --color-heroSection : #0f172aFF;
   --color-herobtnborder : #E5E7EB ;
   --color-herobtnfont : #374151 ;
   --color-subheaading : #64748B ;
+
+  /* background theme */
+  --background-image-gradient-theme : linear-gradient( to right,
+    rgba(255,87,34,1), rgba(216,27,126,1), rgba(124,58,237,1) 
+  ) 
 
 }
 
