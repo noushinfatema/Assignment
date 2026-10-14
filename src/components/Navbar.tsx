@@ -17,8 +17,8 @@ const Navbar = () => {
             </ul>
         </div> 
          <div className='flex gap-5'>
-            <button className="text-small font-sans cursor-pointer">Sign In</button>
-            <button className='flex items-center text-background bg-magenta h-5 w-auto p-5 rounded-4xl font-sans cursor-pointer'>Sign Up</button>
+            <button className="text-small font-sans cursor-pointer hover:-translate-y-1">Sign In</button>
+            <button className='flex items-center text-background bg-magenta h-5 w-auto p-5 rounded-4xl font-sans cursor-pointer hover:-translate-y-1'>Sign Up</button>
         </div> 
         </div>
         </nav>

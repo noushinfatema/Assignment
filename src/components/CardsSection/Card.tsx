@@ -54,7 +54,7 @@ const TechCard = ({ card, saved, onSave }: TechCardProps) => {
         <button
           onClick={() => onSave(card)}
           disabled={isAdded}
-          className={`w-full py-2.5 px-4 rounded-xl font-medium font-sans text-sm transition-all duration-200 ${
+          className={`hover:-translate-y-1 w-full py-2.5 px-4 rounded-xl font-medium font-sans text-sm transition-all duration-200 ${
             isAdded
               ? "bg-slate-100 text-magenta cursor-not-allowed font-semibold border border-card-border/5"
               : "bg-slate-900 hover:bg-slate-800 text-white shadow-sm"

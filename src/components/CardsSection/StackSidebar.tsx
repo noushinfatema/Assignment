@@ -11,7 +11,7 @@ const StackSidebar = ({ saved, onRemove, onRemoveAll }: StackSidebarProps) => {
   return (
     <div className="bg-background rounded-2xl p-6 border border-slate-200 shadow-sm h-fit sticky top-6">
       <div className="mb-4">
-        <h2 className="text-xl font-bold text-slate-900">Your Stack</h2>
+        <h2 className="font-sans text-xl font-bold text-slate-900">Your Stack</h2>
         <p className="text-xs text-slate-500 mt-0.5">
           {saved.length === 0 ? "No technologies selected yet." : `${saved.length} Technology Selected`}
         </p>
@@ -37,7 +37,7 @@ const StackSidebar = ({ saved, onRemove, onRemoveAll }: StackSidebarProps) => {
               </div>
               <button
                 onClick={() => onRemove(item.id)}
-                className="text-slate-400 hover:text-red-500 p-1 transition-colors"
+                className="text-slate-400 hover:text-red-500 p-1 transition-colors hover:translate-1"
                 aria-label={`Remove ${item.name}`}
               >
                 <FaTimes className="text-xs" />
@@ -47,7 +47,7 @@ const StackSidebar = ({ saved, onRemove, onRemoveAll }: StackSidebarProps) => {
 
           <button
             onClick={onRemoveAll}
-            className="w-full mt-4 py-2 px-4 bg-slate-100 hover:bg-red-50 text-red-600 font-medium text-xs rounded-xl transition-colors border border-slate-200 hover:border-red-200"
+            className="font-sans w-full mt-4 py-2 px-4 bg-slate-100 hover:bg-red-50 text-red-600 font-medium text-xs rounded-xl transition-colors border border-slate-200 hover:border-red-200"
           >
             Remove All
           </button>

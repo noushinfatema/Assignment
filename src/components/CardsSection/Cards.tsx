@@ -13,7 +13,7 @@ const Cards = ({ cardsPromise, saved, onSave }: CardsProps) => {
 
   return (
     <div className="col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-      {allCards.length === 0 && <p className="col-span-full text-center py-10">No cards found</p>}
+      {allCards.length === 0 && <p className="col-span-full text-center py-10">No technologies found</p>}
       {allCards.map((singleCard) => (
         <TechCard 
           key={singleCard.id} 
