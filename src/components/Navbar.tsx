@@ -5,9 +5,9 @@ const Navbar = () => {
         <nav className="bg-white sticky top-0 z-50">
             <div className="container mx-auto h-[72.5px] flex justify-between items-center">
          <div className='flex items-center'>
-            <img className='w-33 h-auto' src = {logo} alt="" />
+            <img className='w-33 h-auto' src = {logo} alt="DevSatck logo" />
         </div> 
-         <div className="sm:">
+         <div className="hidden md:flex">
             <ul className="flex justify-center items-center gap-[28.88px] text-small font-sans">
                 <li className="text-magenta"><a href="">Home</a></li>
                 <li><a href="">Technologies</a></li>
