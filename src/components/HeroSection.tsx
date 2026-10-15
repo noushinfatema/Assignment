@@ -2,7 +2,7 @@ import bannerphoto from '../assets/banner-stack.png'
 
 const HeroSection = () => {
     return (
-        <section className="flex justify-between items-center h-105 container mx-auto mt-22">
+        <section className="flex justify-between items-center h-150 container mx-auto mt-22 md:mb-7">
             {/* content wrapper */}
             <div>
                 <p className="font-inter font-extrabold text-[65px] text-heroSection leading-[0.9]">Build Your Ideal<br/> <span className='bg-gradient-theme bg-clip-text text-transparent -leading-2'>Development Stack</span></p>
@@ -15,7 +15,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div>
-                <img src={bannerphoto} alt="" />
+                <img src={bannerphoto} alt="Banner Photo" />
             </div>
         </section>
     );
