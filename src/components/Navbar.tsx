@@ -7,7 +7,7 @@ const Navbar = () => {
          <div className='flex items-center'>
             <img className='w-33 h-auto' src = {logo} alt="" />
         </div> 
-         <div className="">
+         <div className="sm:">
             <ul className="flex justify-center items-center gap-[28.88px] text-small font-sans">
                 <li className="text-magenta"><a href="">Home</a></li>
                 <li><a href="">Technologies</a></li>
